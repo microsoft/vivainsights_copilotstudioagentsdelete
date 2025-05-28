@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
 <#
  .Synopsis
     Runs the Viva Insights Delete API to delete Microsoft Copilot Studio custom agents data in Viva Insights.
