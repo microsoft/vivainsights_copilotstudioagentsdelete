@@ -5,16 +5,18 @@
     Runs the Viva Insights Delete API to delete Microsoft Copilot Studio custom agents data in Viva Insights.
     
  .Description
-    This script instructs the Viva Insights service to delete Microsoft Copilot Studio agents data and stop further data processing. After successfully running the script, Advanced insights users won't be able to run the Copilot Studio custom agents report. This action is irreversible.
+    This script instructs the Viva Insights service to delete Microsoft Copilot Studio agents data and stop further data processing. After successfully running the script, Advanced Insights users won't be able to run the Copilot Studio custom agents report. This action is irreversible.
 
- .Parameter ClientId
+ .Parameter clientId
    App (client) ID. Find this ID in the registered app information on the Azure portal under **Application (client) ID**. If you haven't created and registered your app yet, follow the instructions at https://go.microsoft.com/fwlink/?linkid=2310845 to register a new app in Azure.
 
- .Parameter TenantId
-    Entra tenant ID. Also find this ID on the app's overview page under **Directory (tenant) ID**.
+ .Parameter tenantId
+    Entra tenant ID. Also, find this ID on the app's overview page under **Directory (tenant) ID**.
 
   .Example
     .\CopilotAgentsDelete.ps1 -clientId **** -tenantId *****
+    
+    .\CopilotAgentsDelete.ps1 -clientId bca9ca00-77cd-44b5-a34c-22451df0dc8c -tenantId edbc3058-a198-4e1d-84d8-8678ceb9e577
 #>
 
 # Parameter block
